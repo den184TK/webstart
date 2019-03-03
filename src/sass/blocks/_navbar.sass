@@ -9,12 +9,14 @@
       display: flex
       text-align: right
       align-items: center
+      
     &__addres
       display: flex
       flex-direction: column
       
     &__button
         margin-left: 30px
+        +bold
     &__phone
      display: inline-block
      color: $text-color
@@ -22,6 +24,7 @@
      font-weight: 400
      text-decoration: none
      margin-top: 9px
+     +bold
 @media (max-width: 768px)
   .navbar
     &__info
