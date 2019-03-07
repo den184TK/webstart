@@ -1,11 +1,16 @@
 .price
     &__title
+        width: px
         margin: auto
         margin-bottom: 59px
+        font-size: 30px
+        
+        +bold
         
     &__subtitle
         margin-bottom: 59px
         text-align: center
+        font-size: 20px
     &__card
         margin-bottom: 40px
 .card
@@ -17,9 +22,11 @@
         .card__imge:before
             opacity: 1
     &__text
-        padding: 40px
+        padding: 35px
     &__title
+        font-size: 19px
         margin-top: 0
+        +reg
     &__imge
         position: relative 
         &::before
@@ -58,9 +65,6 @@
         display: flex
         justify-content: space-between
         flex-wrap: wrap
-
-// @media (max-width: 768px)
-//      .card
-//          &-price
-//              &__card
-//                  justify-content: center
+@media (max-width: 768px)
+    .cards
+        justify-content: center
