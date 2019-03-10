@@ -748,6 +748,13 @@ a {
   margin-bottom: 39px;
 }
 
+@media (max-width: 1200px) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column-revers;
+          flex-direction: column-revers;
+}
+
 .price {
   padding: 90px 0;
 }
