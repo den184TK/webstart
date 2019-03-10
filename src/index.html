@@ -239,6 +239,42 @@
         </div>
     </div>
 </section>
+<footer class="footer">
+    <div class="map" id="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae889f1951e80ea73949ca2d871ae56c49a0b53f44a3f711dc18a5d7136da15df&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>
+    </div>
+    <div class="container">
+        <div class="contacts-block">
+            <div class="contacts">
+                <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h3>
+                <ul class="contacts-list">
+                    <li class="li contacts__iteam">
+                        <div class="span contacts-list__icon">
+                            <img src="img/icon/map-placeholder.png" alt="">
+                        </div>
+                        <div class="span contacts-list__text">г. Москва<br>
+                            ул. Ленинга, д. 10,
+                            корпус 2, оф. 308</div>
+                    </li>
+                    <li class="li contacts__iteam">
+                        <div class="span contacts-list__icon">
+                            <img src="img/icon/clock.png" alt="">
+                        </div>
+                        <div class="span contacts-list__text">Режим работы:<br>
+                            с 9:00 до 18:00
+                            </div>
+                    </li>
+                    <li class="li contacts__iteam">
+                        <div class="span contacts-list__icon">
+                            <img src="img/icon/phone-call-button.png" alt="">
+                        </div>
+                        <div class="span contacts-list__text">Телефон:<br> <a href="tel:+7(495)42-251-31">+ 7 (495) 42-251-31</a> </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
 
 
@@ -251,6 +287,7 @@
 
 
     </main>
+
     <!-- <script src="js/main.js"></script> -->
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -290,8 +327,13 @@
                      minlength: jQuery.validator.format("Осталось символов: {0}"),
                      maxlength: jQuery.validator.format("имя слишком длинноев: {0}"),
     },
-                phone: "номер телефона",
-                email: "нам нужен ваш имеил"
+                email :{
+                     required: "заполните поле",
+                     email: "Введите корректный email"
+    },
+
+                phone: "номер телефона"
+               
                
             }
          });
