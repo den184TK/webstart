@@ -704,16 +704,16 @@ a {
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 100px;
-  padding-left: 200px;
+  padding-top: 60px;
+  padding-left: 205px;
 }
 
 .contacts__title {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 90px;
   font-family: 'Museo Sans  Bold', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  margin-bottom: 100px;
 }
 
 .contacts-block {
@@ -738,6 +738,11 @@ a {
   margin-right: 23px;
 }
 
+.contacts-list__text2 {
+  font-family: 'Museo Sans  Bold', sans-serif;
+  font-weight: 700;
+}
+
 .contacts__iteam {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -745,14 +750,7 @@ a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 39px;
-}
-
-@media (max-width: 1200px) {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column-revers;
-          flex-direction: column-revers;
+  margin-bottom: 50px;
 }
 
 .price {
