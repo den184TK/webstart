@@ -863,7 +863,6 @@ label {
 .tagline {
   padding: 90px 0;
   background-color: #ffd200;
-  margin-bottom: 100px;
 }
 
 .tagline__title {
@@ -1571,5 +1570,27 @@ a {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.contract {
+  padding: 90px 0;
+  margin-bottom: 100px;
+}
+
+.contract__title {
+  margin: auto;
+  max-width: 700px;
+}
+
+.contract-block__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contract-block__text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 /*# sourceMappingURL=style.css.map */

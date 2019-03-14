@@ -1,12 +1,8 @@
 var gulp = require('gulp');
 var cleanCSS = require('gulp-clean-css');
 var htmlmin = require('gulp-htmlmin');
+var tinypng = require('gulp-tinypng-compress');
 
-gulp.task('default', defaultTask);
-
-function defaultTask(done) {
-  done();
-}
 
 gulp.task('minifu-css', function(done) {
     return gulp.src('./src/css/*.css')
@@ -35,3 +31,17 @@ gulp.task('fonts', function(done) {
     .pipe(gulp.dest('dist/fonts'))
     done();
 });
+
+gulp.task('tinypng', function (done) {
+    return gulp.src('./src/img/**/*.{png,jpg,jpeg}')
+        .pipe(tinypng({
+            key: '5CTf1YPLFHdgS5Ykd9M8NDtbVKmsPSps'
+        }))
+        .pipe(gulp.dest('dist/img/'));
+        done();
+});
+
+gulp.task('default', gulp.parallel('minifu-css', 'move-js', 'fonts', 'htmlmin', 'tinypng',  function(done) {
+    // do more stuff
+    done();
+  }));
