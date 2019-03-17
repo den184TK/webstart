@@ -1084,6 +1084,8 @@ a {
   left: 0;
   top: 0;
   width: 50%;
+  height: 100%;
+  background-color: red;
 }
 
 .contacts {
