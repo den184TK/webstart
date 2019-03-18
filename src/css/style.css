@@ -1085,7 +1085,7 @@ a {
   top: 0;
   width: 50%;
   height: 100%;
-  background-color: red;
+  background-color: #ffd200;
 }
 
 .contacts {
@@ -1145,10 +1145,24 @@ a {
 }
 
 @media (max-width: 768px) {
-  .container {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .map {
+    position: relative;
+    width: 100%;
+  }
+  .contacts {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-left: 0;
+    padding-bottom: 64px;
   }
 }
 

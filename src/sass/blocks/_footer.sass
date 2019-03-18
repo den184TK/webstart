@@ -4,13 +4,14 @@ a
     +bold
 .footer
     position: relative
+
 .map
     position: absolute
     left: 0
     top: 0
     width: 50%
     height: 100%
-    background-color: red
+    background-color: #ffd200
 .contacts
     flex-basis: 50%
     padding-top: 60px
@@ -44,12 +45,14 @@ a
         margin-bottom: 50px
         
 @media (max-width: 768px)
-  
+    .footer
+        display: flex
+        flex-direction: column-reverse 
     .map
-        order: 
-    .container
-        order: 1
+        position: relative
+        width: 100%
 
-        
-
-        
+    .contacts
+        flex-basis: 100%
+        padding-left: 0
+        padding-bottom: 64px
