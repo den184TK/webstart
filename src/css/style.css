@@ -1068,39 +1068,21 @@ label {
   }
 }
 
-a {
-  text-decoration: none;
-  color: #333333;
-  font-family: 'Museo Sans  Bold', sans-serif;
-  font-weight: 700;
-}
-
 .footer {
   position: relative;
 }
 
 .map {
   position: absolute;
-  left: 0;
   top: 0;
   width: 50%;
-  height: 100%;
-  background-color: #ffd200;
 }
 
 .contacts {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-top: 60px;
-  padding-left: 205px;
-}
-
-.contacts__title {
-  font-size: 24px;
-  line-height: 1.5;
-  margin-bottom: 90px;
-  font-family: 'Museo Sans  Bold', sans-serif;
-  font-weight: 700;
+  padding-top: 92px;
+  padding-left: 210px;
 }
 
 .contacts-block {
@@ -1112,36 +1094,60 @@ a {
           justify-content: flex-end;
 }
 
+.contacts__title {
+  font-size: 22px;
+  line-height: 33px;
+  font-family: 'Museo Sans  Bold', sans-serif;
+  font-weight: 700;
+  margin-bottom: 88px;
+  margin-top: 0;
+}
+
 .contacts-list {
-  padding: 0;
   list-style: none;
+  padding: 0;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
 }
 
 .contacts-list__icon {
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-right: 23px;
+  min-width: 20px;
+  margin-right: 20px;
 }
 
-.contacts-list__text {
-  line-height: 20px;
-}
-
-.contacts-list__text2 {
+.contacts-list__link {
+  text-decoration: none;
   font-family: 'Museo Sans  Bold', sans-serif;
   font-weight: 700;
 }
 
-.contacts__iteam {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 50px;
+.contacts-list__text {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.bold {
+  font-family: 'Museo Sans  Bold', sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-left: 30px;
+    padding-top: 60px;
+  }
+  .contacts-block__title {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1163,6 +1169,20 @@ a {
         flex-basis: 100%;
     padding-left: 0;
     padding-bottom: 64px;
+  }
+  .contacts__title {
+    font-size: 17px;
+    margin-bottom: 32px;
+    line-height: 1.3;
+  }
+  .contacts-list {
+    margin: 0;
+  }
+  .contacts-list__item:last-child {
+    margin-bottom: 0;
+  }
+  .contacts-list__icon {
+    margin-right: 10px;
   }
 }
 
