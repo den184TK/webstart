@@ -1,3 +1,11 @@
+.a
+    color: $text-color
+    text-decoration: none
+    +bold
+    
+.mama
+    display: flex
+    justify-content: space-between
 .offer
     padding: 45px 0
     background: url('../img/offer.png') no-repeat
@@ -35,6 +43,16 @@
         width: 100%
         min-height: 70px
         +bold
+    &__text 
+        padding-top: 30px
+        max-width: 220px
+        font-size: 15px
+    &__text2
+        padding-top: 30px
+        text-align: right
+
+        
+
 @media (max-width: 1200px) 
     .offer
         background-size: cover
@@ -52,6 +70,6 @@
         &__title
             font-size: 18px
             line-height: 20px
-            
+
             
       

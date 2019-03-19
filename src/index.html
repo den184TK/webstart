@@ -74,7 +74,11 @@
                 <input type="tel" name="phone"  class="input offer__input phone" placeholder="Ваш телефон">
                 <button class="button offer__button">Получить бесплатный дизайн-проект</button>
             </form>
+            <div class="mama">
+            <div class="offer__text"> Наш менеджер перезвонит Вам в течение 60 секунд</div>
+            <div class="offer__text2">или перезвоните нам сами<br><a href="#">+7 (495) 42-251-31</a></div>
         </div>
+      </div>
     </div>
 </section>
 <section class="portfolio">
@@ -98,7 +102,7 @@
 
         </div>
     </div>
-</section>
+</section> 
 <div class="price">
     <div class="container">
         <h2 class="section-title price__title wow flip">У нас очень гибкая система скидок на комплексные работы!</h2>
@@ -297,8 +301,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js" ></script>
-  <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
-  <script src="js/map.js" ></script>
+  
 
   <script>
     // инициализация wow 
@@ -306,7 +309,7 @@
   $(document).ready(function(){
         $('#brif-form').validate({
             rules: {
-                username: {
+                username:  {
                     required: true,
                     minlength: 2,
                     maxlength: 15
@@ -372,7 +375,7 @@
          {
              breakpoint: 1200,
              settings: {
-            slidesToShow: 2,
+             slidesToShow: 2,
              slidesToScroll: 1,
            
       }

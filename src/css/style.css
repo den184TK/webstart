@@ -499,12 +499,15 @@ label {
     display: none;
   }
   .navbar__logo {
-    min-width: 91px;
-    min-height: 44px;
+    width: 91px;
+    height: 44px;
   }
-  .navbar__button {
-    min-width: 90px;
-    min-height: 39px;
+  .navbar__logo img {
+    width: 100%;
+  }
+  __button {
+    width: 137px;
+    height: 30px;
   }
 }
 
@@ -636,6 +639,22 @@ label {
   }
 }
 
+.a {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Museo Sans  Bold', sans-serif;
+  font-weight: 700;
+}
+
+.mama {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .offer {
   padding: 45px 0;
   background: url("../img/offer.png") no-repeat;
@@ -688,6 +707,17 @@ label {
   min-height: 70px;
   font-family: 'Museo Sans  Bold', sans-serif;
   font-weight: 700;
+}
+
+.offer__text {
+  padding-top: 30px;
+  max-width: 220px;
+  font-size: 15px;
+}
+
+.offer__text2 {
+  padding-top: 30px;
+  text-align: right;
 }
 
 @media (max-width: 1200px) {
@@ -784,6 +814,9 @@ label {
 }
 
 @media (max-width: 768px) {
+  .portfolio {
+    padding: 45px 0;
+  }
   .portfolio__title {
     font-size: 18px;
     line-height: 20px;
@@ -1051,6 +1084,7 @@ label {
 
 @media (max-width: 768px) {
   .brif {
+    padding: 20px 0;
     background-image: url("../img/brif/brif-bg.jpg"), url("../img/brif/brif-bg1.jpg");
     background-position: top center, center bottom;
     background-size: 100% 50%, cover;
@@ -1124,6 +1158,7 @@ label {
 }
 
 .contacts-list__link {
+  color: #333333;
   text-decoration: none;
   font-family: 'Museo Sans  Bold', sans-serif;
   font-weight: 700;
@@ -1303,7 +1338,7 @@ label {
             justify-content: center;
   }
   .price {
-    padding: 0 0;
+    padding: 45px 0;
   }
   .price__title {
     font-size: 18px;
